@@ -69,7 +69,7 @@
             stage('Deploy') {
                 steps {
                     script {
-                        def deploymentImage = docker.build("pszymon123/blocchi:latest", "-f Deploy.dockerfile .")                 
+                        def deploymentImage = docker.build("pszymon123/blocchi:1d", "-f Deploy.dockerfile .")                 
                         withDockerRegistry([credentialsId: 'dockerhub']) {
                             deploymentImage.push()
                         }
