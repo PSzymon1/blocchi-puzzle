@@ -8,7 +8,7 @@
 
             stage('Checkout') {
                 steps {
-                    git branch: 'master', url: 'https://github.com/PSzymon1/blocchi-puzzle.git'
+                    git branch: 'dev', url: 'https://github.com/PSzymon1/blocchi-puzzle.git'
                 }
             }
 
